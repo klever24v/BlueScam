@@ -1,0 +1,80 @@
+/* Paleta de colores */
+:root {
+    --primary-color: #3498db; /* Azul */
+    --secondary-color: #2ecc71; /* Verde */
+    --accent-color: #e74c3c; /* Rojo */
+    --background-color: #f4f4f4; /* Gris claro */
+    --text-color: #2c3e50; /* Gris oscuro */
+}
+
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Enlaces */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Botones */
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Contenedores */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Tarjetas */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Formularios */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}

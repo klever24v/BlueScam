@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%= title%></title>
+    <%- include('partials/head.ejs') %>
+</head>
+<body>
+    <%- include('partials/navigation.ejs') %>
+    <!--Main content-->
+    <header class="justify-content-center align-items-center d-flex flex-column vh-100 bg-dark text-white">
+        <div class="container vh-20 d-flex justify-content-center align-items-center ">
+            <img src="/img/logotemp.jpg" alt="LOGO" class="w-25 rounded-circle">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+              <h1 class="display-1 my-5 text-uppercase fw-bold ms-5">BlueScan</h1>
+              <a href="/bluescan" class="btn btn-primary w-25 ms-10">Start</a>
+        </div>
+        </div> 
+    </header>
+</body>
+</html>
