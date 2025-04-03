@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+    <title>Escaneo Bluetooth</title>
     <%- include('partials/head.ejs') %>
 </head>
 <body class="bg-dark text-white">
     <%- include('partials/navigation.ejs') %>
+    <%- include('partials/optionsbluetooth') %>
 
+    <!-- Contenido principal para el escaneo de dispositivos -->
     <div class="container text-center mt-5">
         <h1 class="display-4 mb-4">Escaneo de dispositivos Bluetooth</h1>
         <button id="scanButton" class="btn btn-primary btn-lg">Buscar Dispositivos</button>
@@ -20,8 +22,7 @@
         <ul id="deviceList" class="list-group"></ul>
     </div>
 
-    <div id="deviceInfo" class="container mt-4">
-        </div>
+    <div id="deviceInfo" class="container mt-4"></div>
 
     <script src="/js/script.js"></script>
 </body>

@@ -1,0 +1,45 @@
+<div class="container mt-4">
+    <h3>Verificar opciones Bluetooth</h3>
+    <div id="bluetoothOptionsStatus">
+        <!-- Estado de la API Web Bluetooth -->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="bluetoothSupported" disabled>
+            <label class="form-check-label" for="bluetoothSupported">La API Web Bluetooth está habilitada</label>
+        </div>
+
+        <!-- Estado de permisos Bluetooth -->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="permissionsChecked" disabled>
+            <label class="form-check-label" for="permissionsChecked">Permisos de Bluetooth verificados</label>
+        </div>
+
+        <!-- Estado de características experimentales -->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="chromeExperimentalEnabled" disabled>
+            <label class="form-check-label" for="chromeExperimentalEnabled">
+                Habilitar características experimentales de la plataforma Web en Chrome
+                <span class="text-muted">(Ve a: <a href="#" onclick="abrirChromeFlags('enable-experimental-web-platform-features')">chrome://flags/#enable-experimental-web-platform-features</a>)</span>
+            </label>
+        </div>
+
+        <!-- Estado de la opción "Enable Web Bluetooth" en Chrome -->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="chromeBluetoothEnabled" disabled>
+            <label class="form-check-label" for="chromeBluetoothEnabled">
+                Habilitar Web Bluetooth en Chrome
+                <span class="text-muted">(Ve a: <a href="#" onclick="abrirChromeFlags('enable-web-bluetooth')">chrome://flags/#enable-web-bluetooth</a>)</span>
+            </label>
+        </div>
+
+        <!-- Mensaje informativo -->
+        <div id="bluetoothFlagsMessage" class="mt-3 text-danger" style="display: none;">
+            <p><strong>¡Atención!</strong> Para que la API Web Bluetooth funcione correctamente en Chrome, debes habilitar las siguientes opciones:</p>
+            <ul>
+                <li>1️⃣ Habilitar la API Web Bluetooth: <a href="#" onclick="abrirChromeFlags('enable-web-bluetooth')">chrome://flags/#enable-web-bluetooth</a></li>
+                <li>2️⃣ Permitir conexiones sin interacción del usuario: <a href="#" onclick="abrirChromeFlags('enable-web-bluetooth-new-permissions-backend')">chrome://flags/#enable-web-bluetooth-new-permissions-backend</a></li>
+                <li>3️⃣ Habilitar escaneo sin abrir la ventana emergente: <a href="#" onclick="abrirChromeFlags('enable-web-bluetooth-scanning')">chrome://flags/#enable-web-bluetooth-scanning</a></li>
+                <li>4️⃣ Asegúrate de que Bluetooth esté activado en tu sistema operativo y que Chrome tenga permisos de ubicación habilitados.</li>
+            </ul>
+        </div>
+    </div>
+</div>
