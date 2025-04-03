@@ -18,7 +18,7 @@
   collapsed:: true
 	- Clona el repositorio:
 	    
-	  ``  git clone https://github.com/klever24v/BlueScam?tab=readme-ov-file
+	  ``  git clone https://github.com/klever24v/BlueScam
 	    cd BlueScan  
 	  n  
 	  ```
